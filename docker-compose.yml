@@ -1,8 +1,7 @@
 # --- HOW TO docker compose ------
-# 1) $ docker build -t cindi .
-# 2) $ docker compose up
-# 3) Ctrl+c when ready to quit
-# 4) $ docker compose down
+# 1) $ docker compose up
+# 2) Ctrl+c when ready to quit, shutdown can take about 15 seconds.
+# 3) $ docker compose down
 
 version: "3.8"
 
@@ -53,26 +52,21 @@ services:
 # HTTP client requests, so there is no need to "sleep for 11 seconds" while
 # the back-end services initialize.  
   cindi:
-    image: ultasun/cindi:latest
+    image: ultasun/cindi
     depends_on:
       - "mysql"
       - "redis"
       - "postgres"
       - "mongodb"
-    command: /app/bootloader.sh
     ports:
       - 36963:36963
     working_dir: /app
     volumes:
-# uncomment the next line for "development mode" 
-#     - ./:/app
-# comment the next two lines for "development mode" 
       - cindi-sqlite3-data:/app/data
       - cindi-logs:/app/logs
+      - ./config:/app/config
+      - ./init-nonsense-sqlite3.sql:/app/init-nonsense-sqlite3.sql
 
-# the python program might need to invoke docker, in order
-# to have these volume names dynamic (i.e., not called 'cindi' or 'indi')
-# high symmetry between this file and `app.py`
 volumes:
   cindi-sqlite3-data:
   cindi-mysql-data:
