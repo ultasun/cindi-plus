@@ -3,7 +3,7 @@
 
 This git repository makes available a *docker compose pack* in order for end users to get running with *CINDI* quickly, to enable the tenet of supporting rapid application prototyping.
 
-This *docker compose pack* utilizes several *Docker* images, but the spot-light image is called [*cindi*](https://hub.docker/com/repository/docker/ultasun/cindi). In total, there are five images, so *docker compose* is used to orchestrate the setup.
+This *docker compose pack* utilizes several *Docker* images, but the spot-light image is called [*ultasun/cindi*](https://hub.docker.com/repository/docker/ultasun/cindi). In total, there are five images, so *docker compose* is used to orchestrate the setup.
 
 ***MySQL*, *PostgreSQL*, *SQLite3*, *MongoDB*, and *Redis* will all be available as backing-store options** -- you may configure to use all, some, or just one.
 
