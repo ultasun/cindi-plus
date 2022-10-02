@@ -1,7 +1,7 @@
 # Docker Compose Pack for *cindi-plus*
 [*CINDI*](https://github.com/ultasun/cindi) is a *Meta Database Management System* which provides a simple way for front-end applications to perform [*CRUD*](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations  with various back-end stores.  *CINDI* is written in *Python 3*, and is available in the [*PyPI Index* as a *PIP* package](https://pypi.org/project/cindi/).
 
-This git repository makes available a *docker compose pack* in order for end users to get running with *CINDI* quickly, to enable the tenet of supporting rapid application prototyping.
+This git repository makes available a [*docker compose pack*](https://stackoverflow.com/a/55274390) in order for end users to get running with *CINDI* quickly, to enable the tenet of supporting rapid application prototyping.
 
 This *docker compose pack* utilizes several *Docker* images, but the spot-light image is called [*ultasun/cindi*](https://hub.docker.com/repository/docker/ultasun/cindi). In total, there are five images, so *docker compose* is used to orchestrate the setup.
 
