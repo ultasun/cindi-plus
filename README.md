@@ -5,7 +5,7 @@ This git repository makes available a [*docker compose pack*](https://stackoverf
 
 This *docker compose pack* utilizes several *Docker* images, but the spot-light image is called [*ultasun/cindi*](https://hub.docker.com/repository/docker/ultasun/cindi). In total, there are five images, so *docker compose* is used to orchestrate the setup.
 
-***MySQL*, *PostgreSQL*, *SQLite3*, *MongoDB*, and *Redis* will all be available as backing-store options** -- you may configure to use all, some, or just one.
+**[*MySQL*](https://en.wikipedia.org/wiki/MySQL), [*PostgreSQL*](https://en.wikipedia.org/wiki/PostgreSQL), [*SQLite3*](https://en.wikipedia.org/wiki/SQLite), [*MongoDB*](https://en.wikipedia.org/wiki/MongoDB), and [*Redis*](https://en.wikipedia.org/wiki/Redis) will all be available as backing-store options** -- you may configure to use all, some, or just one.  Please see the [CINDI `README.md`](https://github.com/ultasun/cindi) for more information about how the same information is stored redundantly across [*SQL*](https://en.wikipedia.org/wiki/SQL) and [*NoSQL*](https://en.wikipedia.org/wiki/NoSQL) backing-stores.
 
 *cindi-plus* uses significantly more resources (and electricity) than a slimmer CINDI outfit.  **If you would prefer to use the slim outfit, then use the [*cindi-lite*](https://github.com/ultasun/cindi-lite) pack instead.**
 
